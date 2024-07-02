@@ -1,17 +1,17 @@
 {
-  "name": "astro-app",
+  "name": "vite-project",
+  "private": true,
+  "version": "0.0.0",
   "type": "module",
-  "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro check && astro build",
-    "preview": "astro preview",
-    "astro": "astro"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "astro": "^4.11.3",
-    "@astrojs/check": "^0.7.0",
-    "typescript": "^5.5.2"
+    "@stackblitz/sdk": "^1.10.0"
+  },
+  "devDependencies": {
+    "vite": "^5.2.0"
   }
 }
