@@ -1,0 +1,26 @@
+---
+title: Installing the SDK
+type: lesson
+terminal:
+  activePanel: 1
+  panels:
+    - ['output', 'Dev Server']
+    - ['terminal', 'Terminal']
+focus: /pages/index.astro
+---
+
+StackBlitz SDK can be used in any JavaScript project. You can add it to your site using an npm package or [with a CDN](https://developer.stackblitz.com/platform/api/javascript-sdk#install-the-sdk).
+
+For this tutorial, we will be working with a barebones Vite project and will use npm.
+
+Let's start by installing the SDK package. In the terminal on your right, run the following command:
+
+```bash
+npm install @stackblitz/sdk
+```
+
+After the package is installed, you can import the SDK in your project. In the `main.js` file add the following import statement at the top:
+
+```js
+import sdk from '@stackblitz/sdk';
+```
