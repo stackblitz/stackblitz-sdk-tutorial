@@ -1,4 +1,22 @@
 ---
 title: Embedding a project
 type: lesson
+slug: embedding-a-project
+focus: /script.js
 ---
+
+# Embedding a project
+
+The StackBlitz SDK allows you to embed a project in your docs, example pages, or blog posts. The code for the embedded project can be sourced from stackblitz.com, a GitHub repository, or a provided dynamically during the SDK call.
+
+For our first encounter with the SDK, we will embed an already existing StackBlitz project. You can find it at: 
+
+[https://stackblitz.com/edit/react-data-table-component](stackblitz.com/edit/react-data-table-component)
+
+In the project URL above, you can see a `react-data-table-component` segment. We call it a project "slug" and this value will be used to identified the project in the SDK call.
+
+When embedding a project, we will also need to specify the container element where the project will be rendered. In our case, we will use the `<div id="root">` element (you can find it in the `page.html` file).
+
+## Your task
+
+Update the `script.js` file to include the "`root`" id as the first argument, and the project slug as the second one.

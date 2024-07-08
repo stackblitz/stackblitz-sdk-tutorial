@@ -1,0 +1,40 @@
+---
+title: Creating files
+slug: creating-files
+type: lesson
+---
+
+# Creating files
+
+Our minimal React project will consists of the following files:
+
+- `index.html` - the main HTML file that includes the `#root` element
+- `index.tsx` - the main TypeScript file that renders the React app
+- `Demo.tsx` - the main React component
+
+We could get away with just the `index.html` and `index.tsx` files, but separating the component code in a `Demo.tsx` file will allow us to keep the project organized and make it easier to reuse the same setup for other components.
+
+## Your task
+
+Update the `files` object in the `.openProject()` method to create the following files:
+
+```js title=index.html
+`<div id="root"></div>`
+```
+
+```js title=index.tsx
+`import * as React from 'react';
+import * as ReactDOM from 'react-dom/client';
+import Demo from './Demo';
+
+ReactDOM.createRoot(document.querySelector("#root")).render(
+  <Demo />
+);`
+```
+
+```js title=Demo.tsx
+// This code is stored in the imported "sourceCode" variable. 
+// Use the variable instead of hardcoding the content.
+```
+
+Our project should _almost_ work now! There seem to be some dependencies missing. Let's fix that in the next lesson. 

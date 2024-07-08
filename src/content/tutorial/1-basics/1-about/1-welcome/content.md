@@ -1,6 +1,9 @@
 ---
-type: lesson
 title: Welcome!
+slug: welcome
+type: lesson
+template: initial
+focus: /welcome.md
 ---
 
 # StackBlitz SDK
@@ -13,5 +16,6 @@ In this tutorial, you will learn how to use StackBlitz SDK to:
 
 1. initialize a coding environment,
 2. source the code,
-3. configure the look & feel,
-4. and dynamically modify it!
+3. and use it do implement a "run this code" feature.
+
+Let's get started!

@@ -1,0 +1,32 @@
+---
+title: Opening a project
+slug: opening-a-project
+type: lesson
+---
+
+# Opening a project
+
+In the previous chapter, we've learned how to embed a project on a page using the `.embedProjectId()` method. This time, we will do 2 things differently:
+
+- Instead of _embedding_ a project, we will _open_ it in a new window. This is why, the SDK method we will use is named `.openProject()`.
+
+- Instead of using an already existing project, we will create a new one from scratch. (Note that the method name is `.openProject()` and not `.embedProjectId()`.)
+
+The method takes 2 arguments: the required project configuration and the optional settings object. The absolute minimum you need to provide for the setup is the `files` object, where the key is the file path and the value is the file content, for instance: 
+
+```js
+files: {
+  'src/app.html': `<div id="app"></div>`,
+}
+```
+
+## Your task
+
+Use the `.openProject()` method to create a new project with the following 2 files: `index.html` and `index.js`. The HTML file can display a `<h1>Hello, StackBlitz!</h1>` message, and you can leave the JavaScript empty.
+
+```js
+'index.js': ``,
+'index.html': `<h1>Hello, StackBlitz!</h1>`,
+```
+
+When clicking the "open" button in the preview, a new StackBlitz project should now open in a new window. It's very minimal for now, but we will build on it in the next chapters.

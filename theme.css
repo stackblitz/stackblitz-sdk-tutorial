@@ -1,0 +1,22 @@
+main > nav a > img[src*='logo'] {
+  height: 2em;
+  margin-left: 1em;
+}
+
+.markdown-content .demo-video {
+  margin: 1em 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.markdown-content h1 {
+  font-size: 1.7em;
+}
+
+.markdown-content h2 {
+  font-size: 1.55em;
+}
+
+.markdown-content h3 {
+  font-size: 1.45em;
+}

@@ -1,0 +1,31 @@
+---
+title: Defining dependencies
+slug: defining-dependencies
+type: lesson
+---
+
+# Defining dependencies
+
+Our project misses some dependencies. We are using TypeScript, so we need to add the `@types/react` package to the project. We also use `@mui/material`, so that needs to be specified as well.
+
+`dependencies` is another property in our project configuration object. Similar to `files`, it is an object where the key is the dependency name and the value is the version. You can also specify `*` to get the latest version.
+
+## Your task
+
+Add the `dependencies` object to the project configuration in the `.openProject()` method:
+
+```js
+dependencies: {
+  'react': '*',
+  '@types/react': '*',
+  '@mui/material': '*',
+  'react-dom': '*',
+}
+```
+
+Now, the project works!
+
+There's one more thing worth adjusting. Currently, when our users open the live example, they will always see the "index.html" file. We'd like to show them something more relevant.
+
+Let's fix that in the next lesson. 
+

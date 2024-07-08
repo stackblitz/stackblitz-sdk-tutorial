@@ -1,0 +1,27 @@
+---
+title: Additional options
+slug: additional-options
+type: lesson
+---
+
+# Additional options
+
+Our project works, but we'd like to adjust how it's being displayed. Specifically, at this point StackBlitz always opens the "index.html" file by default. Instead we'd like to show the "Demo.tsx" file.
+
+These kind of adjustments are what the second argument of the `.openProject()` method is for. We can use it to define a light or dark theme, show or hide the activity bar, and [more](https://developer.stackblitz.com/platform/api/javascript-sdk-options#openoptions). 
+
+In our case, the property we're interested in is called `openFile`. It takes a string that defines a path to the file you want to be opened when the project is loaded. (We can also specify multiple files and a code line to hightlight but here we will keep it simple.)
+
+## Your task
+
+_We've refactored the code a bit to make the method call a bit clearer, but aside from that we are at the same point as in the last lesson._
+
+Add the `openFile` option to the project configuration in the `.openProject()` method
+
+```js
+const openOptions = {
+  openFile: 'Demo.tsx',
+};
+```
+
+When you click the "open" button in the preview, the project should now open with the "Demo.tsx" file displayed.
